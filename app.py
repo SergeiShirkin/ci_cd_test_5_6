@@ -1,3 +1,3 @@
 def power_ab(a, b):
-  res = a ** b + 2
+  res = a ** b
   return res
