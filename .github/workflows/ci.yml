@@ -14,8 +14,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Print text
-      run: echo "This is CI/CD test"
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
 
-    - name: Print date
-      run: date
+    - name: Run tests
+      run: python test.py
+
+      
